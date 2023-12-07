@@ -35,8 +35,13 @@ import {
 //   return data;
 // };
 
+
+
+
 const Table = () => {
   const [priceList,setPriceList]=useState([])
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -45,62 +50,67 @@ const Table = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        setPriceList(data.message); // Assuming your server returns an object with a "message" property
+        setPriceList(data.message);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     };
 
+
+
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
     fetchData();
+
+    return () => {
+      // Cleanup event listener when component unmounts
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
-  
-  // const data = generateRandomData(20);
-  // console.log(data,)
+
+
+  const headers = [
+    { label: 'Article No', icon: 'blue-300' },
+    { label: 'Product/Service', icon: 'green-300' },
+    { label: 'inPrice', icon: '' },
+    { label: 'Price', icon: '' },
+    { label: 'Unit', icon: '' },
+    { label: 'in Stock', icon: '' },
+    { label: 'Description', icon: '' },
+  ];
+
+  // Define a variable to determine the maximum number of columns based on screen width
+  const maxColumns = screenWidth < 600 ? 2 : screenWidth < 800 ? 4 : 7;
 
 
   return (
     <UITable >
       <TableHeader>
         <TableRow>
-            <TableHead  >
+            {headers.slice(0, maxColumns).map((header, index) => (
+            <TableHead key={index}>
               <div className='flex items-center gap-1 '>
-                <span>Article No</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 text-blue-300">
+                <span>{header.label}</span>
+                {header.icon && (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-4 h-4 text-${header.icon}`}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-                </svg>
+                  </svg>
+                )}
               </div>
             </TableHead>
-            <TableHead  >
-                <div className='flex items-center gap-1 '>
-                    <span>Product/Service</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 text-green-300">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-                    </svg>
-                </div>
-            </TableHead>
-            <TableHead  >
-              inPrice
-            </TableHead>
-            <TableHead  >
-              Price
-            </TableHead>
-            <TableHead  >
-              Unit
-            </TableHead>
-            <TableHead  >
-              in Stock
-            </TableHead>
-            <TableHead  >
-              Description
-            </TableHead>
+          ))}
         </TableRow>
       </TableHeader>
       <TableBody>
         {priceList?.map((row, rowIndex) => (
           <TableRow key={rowIndex} >
-            {row.map((cell, cellIndex) => (
-              <TableCell key={cellIndex}  >
-                <h1 className='text-[12px] border border-sky-200 rounded-lg p-1 px-2' style={{"border-radius":"16px"}}>{cell}</h1>
+            {row.slice(0, maxColumns).map((cell, cellIndex) => (
+              <TableCell key={cellIndex}>
+                <h1 className='text-[12px] border border-sky-200 rounded-lg p-1 px-2' style={{ borderRadius: "16px" }}>{cell}</h1>
               </TableCell>
             ))}
             <div className='pl-4'>
