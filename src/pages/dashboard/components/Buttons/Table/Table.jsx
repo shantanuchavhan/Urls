@@ -74,8 +74,8 @@ const Table = () => {
 
 
   const headers = [
-    { label: 'Article No', icon: 'blue-300' },
-    { label: 'Product/Service', icon: 'green-300' },
+    { label: 'Article No', icon: 'text-blue-300' },
+    { label: 'Product/Service', icon: 'text-green-300' },
     { label: 'inPrice', icon: '' },
     { label: 'Price', icon: '' },
     { label: 'Unit', icon: '' },
@@ -96,7 +96,7 @@ const Table = () => {
               <div className='flex items-center gap-1 '>
                 <span>{header.label}</span>
                 {header.icon && (
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-4 h-4 text-${header.icon}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-4 h-4 ${header.icon}`}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
                   </svg>
                 )}

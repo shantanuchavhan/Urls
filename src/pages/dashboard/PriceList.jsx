@@ -25,7 +25,7 @@ const PriceList = () => {
             </svg>
           </div>
         </div>
-      <div className='flex items-center pt-4 justify-center gap-4 text-sm'>
+      <div className='flex h-max  justify-between lg:justify-center md:w-max  gap-4 text-sm w-full'>
                 <Button icon={addIcon} label='New Product' onClick={() => console.log('New Product')} />
                 <Button icon={printerIcon} label='Print List' onClick={() => console.log('Print List')} />
                 <Button icon={printerIcon} label='Advanced Mode' onClick={() => console.log('Advanced Mode')} />
