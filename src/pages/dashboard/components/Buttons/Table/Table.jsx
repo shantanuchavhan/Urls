@@ -107,8 +107,10 @@ const Table = () => {
       </TableHeader>
       <TableBody>
         {priceList?.map((row, rowIndex) => (
+          
           <TableRow key={rowIndex} >
             {row.slice(0, maxColumns).map((cell, cellIndex) => (
+              
               <TableCell key={cellIndex}>
                 <h1 className='text-[12px] border border-sky-200 rounded-lg p-1 px-2' style={{ borderRadius: "16px" }}>{cell}</h1>
               </TableCell>

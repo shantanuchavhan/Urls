@@ -16,7 +16,7 @@ const HomeLayout = () => {
         <Link to="/terms">terms</Link>
         <Link to="/us">us</Link>
       </div>
-      <div className='flex items-center justify-center px-[200px] py-7 text-white'>
+      <div className='flex items-center justify-center py-7 px-2 md:px-[100px] lg:px-[200px]   text-white' >
         <Outlet />
       </div>
     </div>
