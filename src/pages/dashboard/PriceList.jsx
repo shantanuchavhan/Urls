@@ -3,6 +3,7 @@ import addIcon from "../../images/plus.png"
 
 
 import printerIcon from "../../images/printer.png"
+import toggleIcon from "../../images/toggle.png"
 import Button from './components/Buttons/Button'
 import Table from './components/Buttons/Table/Table'
 
@@ -28,13 +29,9 @@ const PriceList = () => {
       <div className='flex h-max pt-6 md:pt-1  justify-between lg:justify-center md:w-max  gap-4 text-sm w-full'>
                 <Button icon={addIcon} label='New Product' onClick={() => console.log('New Product')} />
                 <Button icon={printerIcon} label='Print List' onClick={() => console.log('Print List')} />
-                <Button icon={printerIcon} label='Advanced Mode' onClick={() => console.log('Advanced Mode')} />
+                <Button icon={toggleIcon} label='Advanced Mode' onClick={() => console.log('Advanced Mode')} />
       </div>    
     </div>
-
-          
-
-
        <div >
           <Table />
        </div>
