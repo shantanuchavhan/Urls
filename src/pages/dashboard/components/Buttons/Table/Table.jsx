@@ -11,29 +11,29 @@ import {
 
 
 
-const generateRandomData = (count) => {
-  const data = [];
-  for (let i = 0; i < count; i++) {
-    const randomArticleNo = Math.floor(Math.random() * 10000000000);
-    const randomProductName = `Product ${i + 1}`;
-    const randomInPrice = Math.floor(Math.random() * 100000);
-    const randomPrice = Math.floor(Math.random() * 2000000);
-    const randomUnit = ['Piece', 'Kg', 'Liter'][Math.floor(Math.random() * 3)];
-    const randomInStock = Math.floor(Math.random() * 100);
-    const randomDescription = `Description for Product ${i + 1}`;
+// const generateRandomData = (count) => {
+//   const data = [];
+//   for (let i = 0; i < count; i++) {
+//     const randomArticleNo = Math.floor(Math.random() * 10000000000);
+//     const randomProductName = `Product ${i + 1}`;
+//     const randomInPrice = Math.floor(Math.random() * 100000);
+//     const randomPrice = Math.floor(Math.random() * 2000000);
+//     const randomUnit = ['Piece', 'Kg', 'Liter'][Math.floor(Math.random() * 3)];
+//     const randomInStock = Math.floor(Math.random() * 100);
+//     const randomDescription = `Description for Product ${i + 1}`;
 
-    data.push([
-      randomArticleNo,
-      randomProductName,
-      randomInPrice,
-      randomPrice,
-      randomUnit,
-      randomInStock,
-      randomDescription,
-    ]);
-  }
-  return data;
-};
+//     data.push([
+//       randomArticleNo,
+//       randomProductName,
+//       randomInPrice,
+//       randomPrice,
+//       randomUnit,
+//       randomInStock,
+//       randomDescription,
+//     ]);
+//   }
+//   return data;
+// };
 
 const Table = () => {
   const [priceList,setPriceList]=useState([])
@@ -54,8 +54,8 @@ const Table = () => {
     fetchData();
   }, []);
   
-  const data = generateRandomData(20);
-  console.log(data,)
+  // const data = generateRandomData(20);
+  // console.log(data,)
 
 
   return (
