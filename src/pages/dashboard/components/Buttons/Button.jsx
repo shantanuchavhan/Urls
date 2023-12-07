@@ -3,7 +3,7 @@ import React from 'react';
 const Button = ({ icon, label, onClick }) => {
   return (
     <button
-    className='border border-gray-300  flex shadow-lg gap-2 py-2 px-10 md:px-4 md:justify-between  rounded-lg'
+    className='border border-gray-300  flex shadow-lg gap-2 py-2 px-8 md:px-4 md:justify-between  rounded-lg'
     style={{ borderRadius:"16px" }}
     onClick={onClick}
   >
