@@ -2,7 +2,6 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import {
   Table as UITable,
-  TableCaption,
   TableHeader,
   TableRow,
   TableHead,
@@ -57,26 +56,7 @@ const Table = () => {
   
   const data = generateRandomData(20);
   console.log(data,)
-  const getTdWidthClass = (index) => {
-    switch (index) {
-      case 0:
-        return 'w-1/12'; // 15%
-      case 1:
-        return 'w-2/12'; // 10%
-      case 2:
-        return 'w-1/12'; // 20%
-      case 3:
-        return 'w-1/12'; // 25%
-      case 5:
-        return 'w-1/12'; // 10%
-      case 6:
-        return 'w-1/12'; // 10%
-      case 7:
-        return 'w-4/12'; // 10%
-      default:
-        return ''; // Add more cases as needed
-    }
-  };
+
 
   return (
     <UITable >

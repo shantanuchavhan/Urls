@@ -1,5 +1,4 @@
 import React from 'react'
-import style from "./style.module.css"
 import { useEffect,useState } from 'react'
 
 const Terms = () => {
