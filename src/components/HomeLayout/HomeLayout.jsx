@@ -12,7 +12,7 @@ const HomeLayout = () => {
     <div className={style.container}>
       <Header/>
       <div className='text-white flex items-center justify-center gap-4 text-lg'>
-        <Link to="dashboard/pricelist">Price List</Link>
+        <Link to="dashboard/pricelist">PriceList</Link>
         <Link to="/terms">terms</Link>
         <Link to="/us">us</Link>
       </div>
