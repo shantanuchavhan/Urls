@@ -35,7 +35,7 @@ const PriceList = () => {
           
 
 
-       <div className='px-20'>
+       <div className='px-10'>
           <Table />
        </div>
       
