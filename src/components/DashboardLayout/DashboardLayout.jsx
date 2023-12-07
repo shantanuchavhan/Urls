@@ -13,7 +13,7 @@ const DashboardLayout = () => {
           <div className='hidden lg:block w-60 shadow-lg'>
             <Sidebar/>
           </div>
-          <div className='w-full py-4 px-6 lg:px-20'>
+          <div className='w-full py-4 px-6 md:px-10 lg:px-20'>
             <Outlet />
           </div>
       </div>
