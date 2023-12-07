@@ -11,7 +11,11 @@ const HomeLayout = () => {
   return (
     <div className={style.container}>
       <Header/>
-      <Link to="/dashboard">dashboard</Link>
+      <div className='text-white flex items-center justify-center gap-3'>
+        <Link to="/dashboard">dashboard</Link>
+        <Link to="/terms">terms</Link>
+        <Link to="/us">us</Link>
+      </div>
       <div className='flex items-center justify-center px-[200px] py-7 text-white'>
         <Outlet />
       </div>
