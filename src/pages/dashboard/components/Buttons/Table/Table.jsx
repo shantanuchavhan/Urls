@@ -89,7 +89,7 @@ const Table = () => {
 
   return (
     <UITable >
-      <TableHeader>
+      <TableHeader >
         <TableRow>
             {headers.slice(0, maxColumns).map((header, index) => (
             <TableHead key={index}>
