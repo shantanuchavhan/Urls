@@ -20,7 +20,7 @@ const Terms = () => {
     fetchData();
   }, []);
   return (
-    <div  className="px-20 ">
+    <div  className="px-3 md:px-10 lg:px-20">
        <div className="text-center mt-2 flex flex-col gap-10">
         <h1 className="text-white m-0 font-[700] text-2xl">Terms</h1>
         <div className="mt-5"><button class="px-10 text-white bg-[#089e1e] py-3 rounded-full text-lg font-[600]">Close and Go Back</button>

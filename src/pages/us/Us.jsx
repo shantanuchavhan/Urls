@@ -23,7 +23,7 @@ const Us = () => {
     fetchData();
   }, []);
   return (
-    <div  className="px-6 md:px-10 lg:px-20">
+    <div  className="px-3 md:px-10 lg:px-20">
        <div className="text-center mt-2 flex flex-col gap-10">
         <div className="mt-5"><button class="px-10 text-white bg-[#089e1e] py-3 rounded-full text-lg font-[600]">Close and Go Back</button>
         </div>
