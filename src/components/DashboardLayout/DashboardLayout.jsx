@@ -10,7 +10,7 @@ const DashboardLayout = () => {
     <div className={style.container}>
       <Header/>
       <div className='flex min-h-screen'>
-          <div className='w-60 shadow-lg'>
+          <div className='hidden lg:block w-60 shadow-lg'>
             <Sidebar/>
           </div>
           <div className='w-full p-4'>
