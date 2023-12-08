@@ -48,7 +48,11 @@ const Table = () => {
     { label: 'Description', icon: '' },
   ];
 
-  const maxColumns = screenWidth < 600 ? 2 : screenWidth < 800 ? 4 : 7;
+  const maxColumns =
+            screenWidth < 600 ? 2 :
+            screenWidth < 700 ? 4 :
+            screenWidth < 800 ? 6 :7;
+
 
   return (
     <UITable>
