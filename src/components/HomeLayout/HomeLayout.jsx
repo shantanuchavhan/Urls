@@ -11,7 +11,7 @@ const HomeLayout = () => {
         <img
           src={bgImage}
           alt=""
-          className="object-cover w-full h-full"
+          className="fixed-bg object-cover w-full h-full"
           style={{ filter: 'brightness(0.7)' }} // Adjust brightness as needed
         />
       </div>
