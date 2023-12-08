@@ -18,7 +18,7 @@
 
 .content{
     position: absolute;
-    margin-top: 5rem;
+    
     left: 50%; 
     transform: translateX(-50%);
     width: 80%;
