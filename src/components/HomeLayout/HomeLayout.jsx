@@ -15,6 +15,14 @@ const HomeLayout = () => {
           style={{ filter: 'brightness(0.7)' }} // Adjust brightness as needed
         />
       </div>
+      <div className="fixed inset-0 overflow-hidden mt-20">
+        <img
+          src={bgImage}
+          alt=""
+          className="fixed-bg object-cover w-full h-full"
+          style={{ filter: 'brightness(0.7)' }} // Adjust brightness as needed
+        />
+      </div>
       <div className="absolute top-0">
         <Header />
         <div className="text-white flex items-center justify-center gap-4 text-lg">
