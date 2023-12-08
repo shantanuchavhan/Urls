@@ -7,7 +7,7 @@ import bgImage from "../../images/bg-image.jpg";
 const HomeLayout = () => {
   return (
     <div className="relative">
-      <div className="fixed inset-0 overflow-hidden">
+      <div className="fixed inset-0 z-1 overflow-hidden">
         <img
           src={bgImage}
           alt=""
@@ -15,7 +15,7 @@ const HomeLayout = () => {
           style={{ filter: 'brightness(0.7)' }} // Adjust brightness as needed
         />
       </div>
-      <div className="fixed inset-0 overflow-hidden mt-20">
+      <div className="fixed inset-0 z-0 overflow-hidden mt-20">
         <img
           src={bgImage}
           alt=""
@@ -23,7 +23,7 @@ const HomeLayout = () => {
           style={{ filter: 'brightness(0.7)' }} // Adjust brightness as needed
         />
       </div>
-      <div className="absolute top-0">
+      <div className="absolute z-2 top-0">
         <Header />
         <div className="text-white flex items-center justify-center gap-4 text-lg">
           <Link to="dashboard/pricelist">PriceList</Link>
