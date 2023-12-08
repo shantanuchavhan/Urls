@@ -11,5 +11,10 @@
     position: fixed;
     background-size: cover;
     background-position: center;
-   
+}
+
+
+.move{
+    position: relative;
+    overflow: auto;
 }
