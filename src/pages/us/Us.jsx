@@ -27,7 +27,7 @@ const Us = () => {
 
   return (
     <div className="px-3 md:px-10 lg:px-20">
-      <div className="text-center mt-2 flex flex-col gap-10">
+      <div className="text-center  mt-2 flex flex-col gap-10">
         {loading ? (
           <LoadingSpinner />
         ) : (
@@ -41,7 +41,7 @@ const Us = () => {
               className="bg-white px-10 py-10 text-center text-[14px] leading-7 font-[300] text-[#282b31] rounded-large"
               style={{ borderRadius: "16px" }}
             >
-              <p>{us}</p>
+              <p className='text-base'>{us}</p>
             </div>
           </>
         )}
