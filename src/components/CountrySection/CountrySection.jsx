@@ -4,7 +4,7 @@ const CountrySection = () => {
   return (
     <div className='flex items-center justify-center gap-2 '>
             <h3>English</h3>
-            <img className='w-7 h-4' src={flagImage} alt="" />
+            <img className='w-7 h-5' src={flagImage} alt="" />
     </div>
   )
 }
