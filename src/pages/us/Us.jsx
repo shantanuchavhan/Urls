@@ -14,11 +14,11 @@ const Us = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        setUs(data.message); // Assuming your server returns an object with a "message" property
-        setLoading(false); // Set loading to false when data is fetched
+        setUs(data.message);
+        setLoading(false); 
       } catch (error) {
         console.error('Error fetching data:', error);
-        setLoading(false); // Set loading to false in case of an error
+        setLoading(false); 
       }
     };
 
