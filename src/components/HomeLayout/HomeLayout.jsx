@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const HomeLayout = () => {
   return (
     <div className={style.container}>
-      <div className={style.move}>
+      <div className="absolute overflow-auto">
         <Header />
         <div className={`${style.text} flex items-center justify-center gap-4 text-lg`}>
           <Link to="dashboard/pricelist">PriceList</Link>
