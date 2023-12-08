@@ -8,7 +8,7 @@ const Terms = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://urlsbackend.onrender.com/terms");
+        const response = await fetch("https://urlsbackend-project.onrender.com/terms");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

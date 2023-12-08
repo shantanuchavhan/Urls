@@ -9,7 +9,7 @@ const Us = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://urlsbackend.onrender.com/us");
+        const response = await fetch("https://urlsbackend-project.onrender.com/us");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
