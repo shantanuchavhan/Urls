@@ -7,11 +7,11 @@
     background-attachment: fixed;
     font-family: Arial, sans-serif;
     min-height: 100vh;
-    margin-top: 30px;
+   
 }
 @media (max-width:480px){
     .container { 
-      background: url(http://myimage.jpg) no-repeat center center fixed; 
+      background: url('../../images/bg-image.jpg') no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
