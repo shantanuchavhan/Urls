@@ -43,6 +43,12 @@ const Us = () => {
             >
               <p className='text-base'>{us}</p>
             </div>
+
+            <div className="mt-5">
+              <button className="px-10 text-white bg-[#089e1e] py-3 rounded-full text-lg font-[600]">
+                Close and Go Back
+              </button>
+            </div>
           </>
         )}
       </div>
