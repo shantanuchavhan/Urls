@@ -4,6 +4,7 @@
     background-image: url('../../images/bg-image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     min-height: 100vh;
 }
