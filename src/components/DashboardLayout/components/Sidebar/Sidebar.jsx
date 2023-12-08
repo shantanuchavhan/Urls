@@ -19,7 +19,7 @@ const Sidebar = () => {
         <div className='border-b-2 border-indigo-500 w-full text-center'>
           <h2>Menu</h2>
         </div>
-        <div className='flex flex-col gap-3 '>
+        <div className='flex flex-col gap-3 w-screen '>
           {dashboardSections.map((menuItem, index) => (
             <Link to={`/dashboard/${menuItem.route}`} key={index} onClick={()=>{
                 setActiveSection((old)=>menuItem.route)
