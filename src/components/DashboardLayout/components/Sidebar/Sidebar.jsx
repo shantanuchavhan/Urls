@@ -15,7 +15,7 @@ const Sidebar = () => {
   const lastWord = currentPath.split('/').filter(Boolean).pop();
     const [activeSection,setActiveSection]=useState(lastWord||"")
     return (
-      <div className='flex flex-col  items-center justify-center py-3 gap-3 shadow-right text-gray-500 p-4'>
+      <div className='flex flex-col  items-center justify-center py-3 shadow-right text-gray-500 p-4'>
         <div className='border-b-2 border-indigo-500 w-full text-center'>
           <h2>Menu</h2>
         </div>
@@ -24,7 +24,7 @@ const Sidebar = () => {
             <Link to={`/dashboard/${menuItem.route}`} key={index} onClick={()=>{
                 setActiveSection((old)=>menuItem.route)
             }}>
-            <div className='flex gap-2 items-center relative'>
+            <div className='flex gap-2 items-center relative mt-3'>
                 {activeSection === menuItem.route && <div className='h-3 w-3 absolute -left-5'><img src={active} alt="" /></div>}
                 <div className='flex items-center gap-2'>
                 <img className='h-4 w-4' src={menuItem.icon} alt='' />
