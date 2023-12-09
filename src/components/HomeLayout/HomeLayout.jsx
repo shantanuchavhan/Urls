@@ -12,15 +12,16 @@ const HomeLayout = () => {
     <div >
       <div className={style.container}></div>
       <div className={style.content}>
-      <Header/>
-      <div className='text-white flex items-center justify-center gap-4 text-lg'>
-        <Link to="dashboard/pricelist">PriceList</Link>
-        <Link to="/terms">terms</Link>
-        <Link to="/us">us</Link>
-      </div>
-      <div className='flex items-center justify-center py-7 px-2 md:px-[100px] lg:px-[200px]   text-white' >
-        <Outlet />
-      </div>
+        <Header/>
+        <div className='text-white flex items-center justify-center space-x-4 text-lg'>
+          <Link to="dashboard/pricelist" className="text-white no-underline text-lg mr-4 hover:underline">PriceList</Link>
+          <Link to="/terms" className="text-white no-underline text-lg mr-4 hover:underline">Terms</Link>
+          <Link to="/us" className="text-white no-underline text-lg hover:underline">Us</Link>
+        </div>
+
+        <div className='flex items-center justify-center py-7 px-2 md:px-[100px] lg:px-[200px]   text-white' >
+          <Outlet />
+        </div>
       </div>
     </div>
   )
