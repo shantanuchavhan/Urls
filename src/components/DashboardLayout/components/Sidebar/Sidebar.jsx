@@ -24,7 +24,7 @@ const Sidebar = () => {
             <Link to={`/dashboard/${menuItem.route}`} key={index} onClick={()=>{
                 setActiveSection((old)=>menuItem.route)
             }}>
-            <div className='flex gap-2 items-center relative'>
+            <div className='flex gap-2 items-center mb-2 relative'>
                 {activeSection === menuItem.route && <div className='h-3 w-3 absolute -left-5'><img src={active} alt="" /></div>}
                 <div className='flex items-center gap-2'>
                 <img className='h-4 w-4' src={menuItem.icon} alt='' />
