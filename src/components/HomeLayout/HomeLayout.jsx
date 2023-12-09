@@ -13,7 +13,7 @@ const HomeLayout = () => {
       <div className={style.container}></div>
       <div className={style.content}>
         <Header/>
-        <div className='text-white flex items-center justify-center space-x-4 text-lg'>
+        <div className='text-white flex items-center justify-center  text-lg'>
           <Link to="dashboard/pricelist" className="text-white no-underline text-lg mr-4 hover:underline">PriceList</Link>
           <Link to="/terms" className="text-white no-underline text-lg mr-4 hover:underline">Terms</Link>
           <Link to="/us" className="text-white no-underline text-lg hover:underline">Us</Link>
