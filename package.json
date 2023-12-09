@@ -33,13 +33,5 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.20.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ]
-    
   }
 }
