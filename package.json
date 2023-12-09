@@ -34,5 +34,8 @@
   "devDependencies": {
     "react-router-dom": "^6.20.1"
   },
-  "browserslist": []
+  
+  "browserslist": "> 0.2%, not dead, not ie 11, not op_mini all"
+
+  
 }
