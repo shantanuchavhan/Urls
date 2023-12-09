@@ -33,6 +33,13 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.20.1"
+  },
+  "browserslist": {
+    "production": [
+      
+    ],
+    "development": [
+      
+    ]
   }
- 
 }
