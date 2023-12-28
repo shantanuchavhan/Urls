@@ -11,7 +11,7 @@ const Table = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://urlsbackend-project.onrender.com/getAllProduct");
+        const response = await fetch("https://urlsbackend-project.onrender.com/getAllProducts");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
